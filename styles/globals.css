@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color1: #e8e0d9;
+  --color2: #e7cdd3;
+  --color3: #cdd5df;
+  --color4: #6528F7;
+  --color5: #A076F9;
+  --color6: #D7BBF5;
+  --color7: #EDE4FF;
+
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+.bg-gradient-1 {
+  animation-name: gradient-fade;
+  animation: gradient-fade 40s linear infinite alternate;
+  background-position: 0 0;
+  background-size: 100% 300%;
+  background-image: linear-gradient(
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color1),
+    var(--color2)
+  );
+}
+
+.bg-gradient-2 {
+  animation-name: gradient-fade;
+  animation: gradient-fade 20s linear infinite alternate;
+  background-position: 0 0;
+  background-size: 100% 300%;
+  background-image: linear-gradient(
+    var(--color5),
+    var(--color6),
+    var(--color7),
+    var(--color6)
+  );
+}
+
+@keyframes gradient-fade {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes glich {
+}

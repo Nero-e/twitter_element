@@ -8,15 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  theme: {
-    extend: {
       colors: {
         'raspberry': {
           DEFAULT: '#D81159',
@@ -56,7 +47,11 @@ const config: Config = {
           '700': '#333438',
           '800': '#0f1020',
           '900': '#07070e',
+          '1000': '#100f11'
         },
+      },
+      boxShadow: {
+        'custom': '2px 4px 20px #0000000a',
       }
     },
   },
