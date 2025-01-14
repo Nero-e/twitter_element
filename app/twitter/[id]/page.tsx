@@ -3,11 +3,12 @@ import { type } from "os";
 
 type;
 
-export default async function pageCharacter({
-  params,
-}: {
-  params: { id: number };
-}) {
+export default async function pageCharacter(
+  props: {
+    params: Promise<{ id: number }>;
+  }
+) {
+  const params = await props.params;
   const character = await getCharacter(params.id);
   return (
     <>
