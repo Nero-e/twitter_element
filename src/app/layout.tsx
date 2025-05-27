@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative w-full h-screen overflow-auto bg-rich-black-1000">{children}</body>
+      <body className="relative w-full h-screen overflow-auto bg-rich-black-1000 text-ghost-white p-5">{children}</body>
     </html>
   );
 }

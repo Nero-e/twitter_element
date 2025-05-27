@@ -12,7 +12,7 @@ type CharacterProps = {
 const TwitterComponent = async () => {
   const characters = await getCharacters();
 
-  console.log(characters);
+  // console.log(characters);
 
   return (
     <>
@@ -24,16 +24,14 @@ const TwitterComponent = async () => {
           </strong>
           {characters?.slice(0, 3).map((post: CharacterProps) => {
             return (
-              <>
-                <TwitterFollowCard
-                  // isFollowing={handleFollow}
-                  key={post.id}
-                  id={post.id}
-                  name={post.name}
-                  hashtag={`@${post.status}`}
-                  image={post.image}
-                />
-              </>
+              <TwitterFollowCard
+                // isFollowing={handleFollow}
+                key={post.id}
+                id={post.id}
+                name={post.name}
+                hashtag={`@${post.status}`}
+                image={post.image}
+              />
             );
           })}
         </div>

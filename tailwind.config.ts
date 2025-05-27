@@ -49,6 +49,15 @@ const config: Config = {
           '900': '#07070e',
           '1000': '#100f11'
         },
+        'bone': { 
+          DEFAULT: '#D6D0C3'
+        },
+        'raisin-black': {
+          DEFAULT: '#231f20'
+        },
+        'redwood': {
+          DEFAULT: '#a63d40'
+        }
       },
       boxShadow: {
         'custom': '2px 4px 20px #0000000a',

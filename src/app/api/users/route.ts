@@ -17,16 +17,3 @@ export async function GET() {
     );
   }
 }
-
-// de esta forma no se expone la url de la api
-async function getUsers() {
-  const res = await orm.query.users.findMany({
-    limit: 10,
-  })
-}
-
-async function getUsersByEmail(email: string) {
-  const res = await orm.query.users.findFirst({
-    where: (entry, { eq }) => eq(entry.email, email),
-  });
-}

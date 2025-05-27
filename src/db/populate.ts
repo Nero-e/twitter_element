@@ -1,18 +1,20 @@
 import "dotenv/config";
-import { users, UserType } from "./schema/users";
+import { users, UserType2 } from "./schema/users";
 
 import { orm } from "@/src/db";
 
-const USERS: UserType[] = [
+const USERS: UserType2[] = [
   {
     name: "Platzi Team",
     age: 25,
     email: "platzi@gmail.com",
+    username: "platzi",
   },
   {
     name: "Kevin David",
     age: 25,
     email: "kedav.e12@gmail.com",
+    username: "kedav",
   },
 ];
 
@@ -28,4 +30,4 @@ main();
 
 //npx drizzle-kit push
 
-//npx tsx src/db/populate.
+//npx tsx src/db/populate.ts
